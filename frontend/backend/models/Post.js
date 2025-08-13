@@ -7,11 +7,12 @@ const postSchema = new mongoose.Schema(
             require: true,
             trim: true
         },
-        content: {
+        author: {
             type: String,
             require: true,
+            trim:true
         },
-        auther: {
+        description: {
             type: String,
             default: "익명"
         }
