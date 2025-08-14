@@ -15,14 +15,9 @@ mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("mongodb 연결 성공"))
     .catch((err) => console.log("연결 실패", err))
 
-
-
-const postRoutes = require("./routes/postRoutes")
-app.use("/api/posts", postRoutes)
-
+// bookRoutes만 한 번 등록
 const bookRoutes = require("./routes/bookRoutes")
 app.use("/api/books", bookRoutes)
-
 
 app.get('/', (req, res) => {
     res.send("Hello Express!")
