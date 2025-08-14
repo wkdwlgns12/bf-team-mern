@@ -1,24 +1,24 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-const postSchema = new mongoose.Schema(
+const bookSchema = new mongoose.Schema(
     {
         title: {
             type: String,
-            require: true,
+            required: true,
             trim: true
         },
-        content: {
+        author: {
             type: String,
-            require: true,
+            required: true,
+            trim: true
         },
-        auther: {
-            type: String,
-            default: "익명"
-        }
+        description: {
+            ype: String,
+            default: ""
+        },
     }, {
     timestamps: true
 }
-)
+);
 
-
-module.exports = mongoose.model("Post", postSchema)
+module.exports = mongoose.model("Book", bookSchema);
