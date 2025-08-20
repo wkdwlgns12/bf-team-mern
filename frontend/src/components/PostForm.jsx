@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import './PostForm.css'
+import './css/PostForm.css'
 const PostForm = () => {
 
     const API = import.meta.env.VITE_API_URL
