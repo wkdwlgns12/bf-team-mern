@@ -1,13 +1,10 @@
-
-import './App.css'
-import PostForm from './components/PostForm'
+import "./App.css";
+import PostForm from "./components/PostForm"
 function App() {
-
   return (
     <>
       <PostForm />
     </>
-  )
+  );
 }
-
-export default App
+export default App;

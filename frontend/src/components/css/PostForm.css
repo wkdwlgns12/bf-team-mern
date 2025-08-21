@@ -26,11 +26,9 @@
     padding: 12px;
     border: 1px solid #f8fafc;
     cursor: pointer;
-    background-color: #f8fafc;
     border-radius: 10px;
     color: #fff;
     background-color: rgb(34, 204, 34);
-    ;
 }
 
 .btn.refresh {
@@ -43,7 +41,6 @@
 
 .update.btn {
     background-color: rgb(34, 204, 34);
-
 }
 
 .delete.btn {
@@ -51,7 +48,6 @@
 }
 
 .post-list li {
-
     border: 1px solid #eee;
     padding: 12px;
     margin: 12px 0;
